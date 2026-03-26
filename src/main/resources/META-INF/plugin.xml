@@ -8,7 +8,7 @@
         Requires Claude Code CLI to be installed.
     ]]></description>
 
-    <idea-version since-build="242" />
+    <idea-version since-build="242" until-build="" />
 
     <depends>com.intellij.modules.platform</depends>
     <depends>org.jetbrains.plugins.terminal</depends>
