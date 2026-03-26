@@ -1,0 +1,27 @@
+<idea-plugin>
+    <id>com.reeddev.claude-dangerous-mode</id>
+    <name>Claude Code - Dangerous Mode</name>
+    <version>1.0.0</version>
+    <vendor>Reed Newman</vendor>
+    <description><![CDATA[
+        Opens Claude Code in the terminal with --dangerously-skip-permissions flag.
+        Requires Claude Code CLI to be installed.
+    ]]></description>
+
+    <idea-version since-build="242" />
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.plugins.terminal</depends>
+
+    <actions>
+        <action
+            id="com.reeddev.claudedangerous.OpenDangerousClaudeAction"
+            class="com.reeddev.claudedangerous.OpenDangerousClaudeAction"
+            text="Claude Code (Dangerous)"
+            icon="/icons/claude-dangerous.svg"
+            description="Open Claude Code with --dangerously-skip-permissions">
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl shift ESCAPE" />
+            <add-to-group group-id="MainToolbarRight" anchor="last" />
+        </action>
+    </actions>
+</idea-plugin>
